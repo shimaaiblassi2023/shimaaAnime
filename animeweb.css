@@ -1,0 +1,154 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: aliceblue;
+    height: 1000%;
+}
+header{
+    height: 10%;
+}
+main{
+    height: 80%;
+}
+footer{
+    height: 10%;
+   
+}
+#imglogo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 10px;
+}
+#Doffers{
+    background-color: antiquewhite;
+}
+#offers{
+    width: 100%;
+    height: auto;
+    position: relative;
+    animation: mymove 5s infinite;
+    
+    text-align: center;
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  }
+#text{
+    font-family: 'Belanosima', sans-serif;
+    width: fit-content;
+    position: absolute;
+    top:25px;
+    left:70px;
+    font-size: 90px;
+}
+#InputS{
+    background-color: whitesmoke;
+    transition: width 0.3s ease;
+
+}
+#search{
+    position: absolute;
+    top:10%;
+    right: 20%;
+}
+#BtnS{
+    cursor: pointer;
+    transition: transform   0.3s ease;
+}
+#BtnS:focus,
+#search:focus {
+    outline: none;
+}
+#search.active.input {
+    width: 200px;
+}
+#search.active.btn{
+    transform: translateX(198px);
+}
+#toOrder{
+    color:black;
+     text-decoration: none;
+      background-color: rgb(117, 99, 99);
+       border: 2px solid black;
+        padding: 10px;
+     animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    from {background-color: rgb(240, 180, 180);}
+    to {background-color: rgb(186, 186, 236);}
+  }
+
+
+#cart{
+    width: 30px;
+    height: 30px;
+}
+
+#article1{
+    height: 50px;
+    text-align: center;
+    padding-top: 30px;
+}
+#article1:hover{
+    color:rgb(240, 202, 202);
+}
+.linksImg{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+}
+:hover.linksImg{
+    text-decoration: underline;
+}
+.alinks:hover{
+    background-color:  rgb(243, 234, 224);
+    color: black;
+    border-radius: 20%;
+}
+
+.boxes{
+    float: left;
+  width: 33%;
+  height: 50px;
+  text-align: center;
+  
+}
+#bGA{
+    padding: 10px;
+    border: 2px solid black;
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    width: 70%;
+    height: 500px;
+}
+
+
+.hoodiesImg{
+    height: 80%;
+    width: 80%;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+
+@media screen and (min-width: 400px) {
+    #bGA {
+      width: 60%;
+    }
+  }
+  
+  @media screen and (min-height: 667px) {
+    #bGA {
+      height: 200px;
+    }
+  }

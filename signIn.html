@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>signIn</title>
+    </head>
+<style>
+body {font-family: 'Times New Roman', Times, serif;
+background-color: aliceblue;
+}
+
+.Inputs{
+  width:70%;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5%;
+  background-color: #f1f1f1;
+}
+.DivIl{
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+}
+#EmailLabel{
+  margin: 10px;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.btnC{
+  background-color: #bcc5c1;
+  color:black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+}
+.btnS{
+  background-color: #bcc5c1;
+  color:black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+}
+button:hover {
+  opacity:1;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+<a href="anime.html"><img style="width: 90px; height: 90px; border: 2px solid black; border-radius: 20%;"  src="img/logo.png "   alt=""></a>
+<form action="servire.html" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Sign In</h1>
+    <p style="text-align: center;" >Please fill  this form to Sign In.</p>
+    <hr>
+<div >
+  <div class="DivIl">
+    <label id="EmailLabel" class="Labels"  for="email"><b>Email</b></label> 
+    <input class="Inputs" type="text" placeholder="Enter Email" name="email" required>
+  </div>
+  <div class="DivIl">
+    <label class="Labels"  for="psw"><b>Password</b></label>  
+    <input class="Inputs" type="password" placeholder="Enter Password" name="psw" required>
+  </div>   
+    <label class="Labels">
+      <input  type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;position: absolute; bottom: 36.5%;  left:23%;"> 
+      <p style="position: absolute; bottom: 36%;  left:25%;" >Remember me</p>
+    </label>
+  </div>
+    
+    <a href="" style="color:dodgerblue; position: absolute; bottom: 35.4%; left: 46.5%; ">Terms & Privacy</a>
+    <p style="position: absolute; bottom: 33%; left: 33%;">By Sign In  you agree to our </p>
+
+    <div class="clearfix">
+      <button type="button" class="btnC">Cancel</button>
+      <button type="submit" class="btnS">Sign In</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

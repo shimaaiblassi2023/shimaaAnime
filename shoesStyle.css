@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: aliceblue;
+}
+#imglogo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 10px;
+}
+#text{
+    text-align: center;
+}
+#links{
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    padding: 10px;
+}
+.alinks{
+    text-decoration: none;
+    padding: 10px;
+}
+.articles{
+    height: 500px;
+    width: 33%;
+    text-align: center;
+    float: left;
+}
+.articles:hover{
+    transform: scale(1.1);
+}
+.imgs{
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+}
+#shop{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+#divshop{
+    text-align: center;
+}
+#cart{
+    width: 30px;
+    height: 30px;
+}
+
+
+@media screen and (min-width: 400px) {
+    .imgs{
+
+    }
+}
+@media screen and (min-height: 667px) {
+    .imgs {
+      height: 45%;
+    }
+  }
